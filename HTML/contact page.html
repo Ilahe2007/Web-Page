@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mathematics</title>
+  <link rel="icon" type="image/x-icon" href="indir.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Əlaqə saxlayın</h2>
+    <p>Təklif və iradlarınızı bildirin</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Istifadəçi adı:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Email:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Şəhər:</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="australia">Azerbaijan</option>
+          <option value="canada">Canada</option>
+          <option value="usa">Ukrania</option>
+          <option value="canada">Russia</option>
+          <option value="usa">UK</option>
+          <option value="usa">USA</option>
+          <option value="usa">other...</option>
+        </select>
+        <label for="subject">Təklif və irad:</label>
+        <textarea id="subject" name="subject" placeholder="Yazın.." style="height:170px"></textarea>
+      </form>
+      <form method="post" action="dfsdf.html">
+          <div class="container">   
+              <button type="submit">Göndər</button>
+          </div>   
+      </form> 
+    </div>
+  </div>
+</div>
+</body>
+</html>
